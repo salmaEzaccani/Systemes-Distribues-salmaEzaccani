@@ -17,14 +17,12 @@ public class MetierImpl implements IMetier {
    /* public MetierImpl(IDao dao) {
         this.dao = dao;
     }*/
-
     @Override
     public double calcul() {
         double data= dao.getData();
         double res=data*11;
         return res;
     }
-
 
     //  pour permettre d'injecter dans la variable dao un objet d'une classe qui implemente l'interface IDao
     public void setDao(IDao dao) {

@@ -23,7 +23,7 @@ public class Pres2 {
 
         //  MetierImpl metier=new MetierImpl();
         String metierClassName= scanner.nextLine(); // lire 2eme ligne
-        Class cMetier=Class.forName(daoClassName);  // class charger en memoire
+        Class cMetier=Class.forName(metierClassName);  // class charger en memoire
         IMetier metier=(IMetier) cMetier.getConstructor().newInstance(); // creer objet de cet class
 
 
